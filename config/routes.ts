@@ -16,6 +16,7 @@ export default [
     ],
   },
   { name: '查询表格', icon: 'table', path: '/list', component: './TableList' },
+  { name: '井字棋', icon: 'BorderlessTableOutlined', path: '/tic', component: './Tic-Tac-Toe' },
   { path: '/', redirect: '/welcome' },
   { path: '*', layout: false, component: './404' },
 ];
