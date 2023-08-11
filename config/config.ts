@@ -36,7 +36,7 @@ export default defineConfig({
   theme: {
     // 如果不想要 configProvide 动态设置主题需要把这个设置为 default
     // 只有设置为 variable， 才能使用 configProvide 动态设置主色调
-    'root-entry-name': 'variable',
+    'root-entry-name': 'default',
   },
   /**
    * @name moment 的国际化配置
@@ -75,7 +75,7 @@ export default defineConfig({
    */
   title: 'Ant Design Pro',
   layout: {
-    locale: true,
+    locale: false,
     ...defaultSettings,
   },
   /**
@@ -88,9 +88,6 @@ export default defineConfig({
     plugins: ['duration'],
   },
   /**
-   * @name 国际化插件
-   * @doc https://umijs.org/docs/max/i18n
-   */ /**
    * @name antd 插件
    * @description 内置了 babel import 插件
    * @doc https://umijs.org/docs/max/antd#antd
